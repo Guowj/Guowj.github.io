@@ -72,3 +72,8 @@ deploy:
   type: git
   repo: https://github.com/Guowj/Guowj.github.io.git
   branch: master
+
+# duoshuo_shortname
+duoshuo_shortname: marsguo
+# 多说分享服务
+duoshuo_share: true
