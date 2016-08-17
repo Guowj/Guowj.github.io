@@ -308,103 +308,13 @@
 
       
         
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;本文由作者原创，转载请注明出处，谢谢 ^ ^</div></pre></td></tr></table></figure>
-<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h4><p>对于每一个自己写过博客的同学来说，拥有自己的个人博客站点是一件很让人值得兴奋的事情，接下来就让我们一起来利用“Hexo + Github pages“搭建属于自己的个人博客吧……^^</p>
+          <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h4><p>对于每一个自己写过博客的同学来说，拥有自己的个人博客站点是一件很让人值得兴奋的事情，接下来就让我们一起来利用“Hexo + Github pages“搭建属于自己的个人博客吧……^^</p>
 <hr>
-<h4 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a><strong>效果图</strong></h4><p>先放一张搭建完成后的效果图给大家瞧瞧。<br>感兴趣的同学也可以前往<a href="https://guowj.github.io/" title="我的个人博客" target="_blank" rel="external">我的个人博客</a>溜达溜达。</p>
-<p><img src="http://img.blog.csdn.net/20160728130431476" alt="搭建成功效果图"></p>
-<hr>
-<h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a><strong>准备</strong></h4><p><strong>1、安装Node.js</strong>（<a href="https://nodejs.org/en/download/" title="下载node" target="_blank" rel="external">下载</a>）</p>
-<p>因为 Hexo 是一个基于nodejs 的静态博客网站生成器，所以安装node.js是必不可少的。</p>
-<p><img src="http://img.blog.csdn.net/20160728141718383" alt="img"></p>
-<p><strong>2、安装git</strong>（<a href="https://git-scm.com/downloads" title="下载git" target="_blank" rel="external">下载</a>）</p>
-<p>既然是基于Github pages搭建的Blog,安装Git肯定是必须的，安装好以后，直接通过指令即可将Hexo部署到 GitHub Pages。<br>如果有装Xcode的同学，此步可省略，因为Xcode自带有Git。</p>
-<p><img src="http://img.blog.csdn.net/20160728141748809" alt="img"></p>
-<hr>
-<h4 id="开始安装Hexo"><a href="#开始安装Hexo" class="headerlink" title="开始安装Hexo"></a><strong>开始安装Hexo</strong></h4><p>竟然 Node.js 和 Git 都已经安装好了，那么我们就可以开始安装Hexo了。</p>
-<p><strong>1、在本地建立一个文件夹，用户存放Hexo的配置文件,例如：Blog。</strong></p>
-<p><img src="http://img.blog.csdn.net/20160728140157923" alt="img"></p>
-<p><strong>2、然后打开 终端（Terminal） 定位到 Blog 文件夹。</strong></p>
-<p><img src="http://img.blog.csdn.net/20160728140542134" alt="img"></p>
-<p><strong>3、正式开始安装 hexo</strong></p>
-<p>执行命令：<code>sudo npm install -g hexo</code></p>
-<p><img src="http://img.blog.csdn.net/20160728141331834" alt="img"></p>
-<p>输入密码</p>
-<p><img src="http://img.blog.csdn.net/20160728141357429" alt="img"></p>
-<p><strong>4、初始化 Hexo</strong></p>
-<p>执行命令：<code>hexo init</code></p>
-<p><img src="http://img.blog.csdn.net/20160728142717747" alt="img"></p>
-<p><strong>5、生成静态页面</strong></p>
-<p>执行命令：<code>hexo generate</code></p>
-<p><img src="http://img.blog.csdn.net/20160728143103014" alt="img"></p>
-<p><strong>6、启动本地服务</strong></p>
-<p>执行命令：<code>hexo server</code></p>
-<p><img src="http://img.blog.csdn.net/20160728143627537" alt="img"></p>
-<p>浏览器输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
-<p><img src="http://img.blog.csdn.net/20160728143830274" alt="img"></p>
-<p>好了，到此为止，Hexo就已经安装好了， Blog就是你的博客根目录。</p>
-<hr>
-<h4 id="关联Github"><a href="#关联Github" class="headerlink" title="关联Github"></a><strong>关联Github</strong></h4><p><strong>1、New repository</strong></p>
-<p><img src="http://img.blog.csdn.net/20160728144840210" alt="img"></p>
-<p>Repository name 固定写法为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">your_user_name.github.io</div></pre></td></tr></table></figure>
-<p><img src="http://img.blog.csdn.net/20160728150800968" alt="img"></p>
-<p>把 your_user_name 替换为你的用户名然后点击 Create repository 就可以了。</p>
-<p>PS：因为我已经新建过了，所有会报错。</p>
-<p><strong>2、准备 Clone repository</strong></p>
-<p>在本地新建一个文件夹Backup，然后把Blog中的文件和文件夹都剪切到Backup中去，让Blog为空。</p>
-<p>PS：这一步操作是为了Clone repository时不报错。</p>
-<p><strong>3、开始 Clone repository</strong></p>
-<p>copy地址：</p>
-<p><img src="http://img.blog.csdn.net/20160728160126975" alt="img"></p>
-<p>clone到Blog文件夹中：</p>
-<p><img src="http://img.blog.csdn.net/20160728160152460" alt="img"></p>
-<p><strong>3、开始关联</strong></p>
-<p>把Backup中的文件和文件夹都剪切到Blog中去，然后就可以把Backup给delete了。</p>
-<p>打开文件夹中的 _config.yml 文件：</p>
-<p><img src="http://img.blog.csdn.net/20160728160718541" alt="img"></p>
-<p>翻到最后面：</p>
-<p><img src="http://img.blog.csdn.net/20160728161030434" alt="img"></p>
-<p>修改deploy：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: 填写你的repository clone地址</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p>保存并退出</p>
-<p>push 一下 git</p>
-<p><img src="http://img.blog.csdn.net/20160728164643124" alt="img"></p>
-<p>打开终端定位到Blog</p>
-<p>执行 install 命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<p>执行部署命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-<p>回到 Github 点击 Settings：</p>
-<p><img src="http://img.blog.csdn.net/20160728162323064" alt="img"></p>
-<p>在浏览器打开这个链接：</p>
-<p><img src="http://img.blog.csdn.net/20160728162431891" alt="img"></p>
-<p>看到下面这个界面，恭喜你，你的个人博客已经搭建成功了：</p>
-<p><img src="http://img.blog.csdn.net/20160728162539532" alt="img"></p>
-<p>PS：每次部署都需要依次执行命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo clean</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-<hr>
-<h4 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a><strong>修改主题</strong></h4><p>既然是个人博客站点，当然要选一套符合自己气质的主题［<a href="https://github.com/hexojs/hexo/wiki/Themes" title="主题列表" target="_blank" rel="external">Themes</a>］咯～</p>
-<p>这里以我的为例：</p>
-<p><a href="https://github.com/henryhuang/oishi#%E6%89%80%E6%9C%89%E6%96%B0%E7%89%B9%E6%80%A7" title="Oishi" target="_blank" rel="external">Oishi</a> - A white theme based on Landscape plus and Writing. - <a href="https://guowj.github.io/" target="_blank" rel="external">Demo</a></p>
-<p><strong>安装：</strong></p>
-<p>终端定位到你博客的根目录然后执行命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/henryhuang/oishi.git themes/oishi</div></pre></td></tr></table></figure>
-<p>安装完成以后你会发现在你本地的 themes 文件夹中多了一个 oishi 文件夹</p>
-<p><img src="http://img.blog.csdn.net/20160728172518209" alt="img"></p>
-<p><strong>启用</strong></p>
-<p>修改设置文件 _config.yml，把 theme 的值设置为 oshi</p>
-<p><img src="http://img.blog.csdn.net/20160728172347559" alt="img"></p>
-<p>这里可以修改一下 title 和 author 信息，改成你喜欢的就好了。</p>
-<p><img src="http://img.blog.csdn.net/20160728172924606" alt="img"></p>
-<p>修改好以后重新部署（前面有写）一下，然后push一下git，就可以在你的个人博客站点上面看到符合你气质的主题效果了～</p>
-<hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;本文由作者原创，转载请注明出处，谢谢 ^ ^</div></pre></td></tr></table></figure>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/08/17/Hold-in-Hexo-Github-pages-set-up-their-own-blog/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -502,18 +412,12 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+          <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/27/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
