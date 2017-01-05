@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://guowj.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -77,3 +77,6 @@ deploy:
 duoshuo_shortname: marsguo
 # 多说分享服务
 duoshuo_share: true
+
+# Baidu Analytics ID 百度统计
+baidu_analytics: 859d99fd80468d00c1cb281198be0a27
